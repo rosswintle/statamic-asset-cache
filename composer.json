@@ -20,7 +20,7 @@
         },
         "laravel": {
             "providers": [
-                "RossWintle\\StatamicAssetCache\\StatamicAssetCacheServiceProvider"
+                "RossWintle\\StatamicAssetCache\\ServiceProvider"
             ]
         }
     },

@@ -26,25 +26,25 @@ Be sure to do this in ALL environments: local, staging, and production, if you h
 The Statamic tag is:
 
 ```
-{{ asset_cache package_name='<npm package name>' version='<version constraint>' filename='<file path and name>' }}
+{{ asset_cache package='<npm package name>' version='<version constraint>' file='<file path and name>' }}
 ```
 
-* `package_name` is the name of an npm package (currently only npm is supported via jsdelivr.net)
+* `package` is the name of an npm package (currently only npm is supported via jsdelivr.net)
 * `version` is a version constraint such as `1.9.0`. Semantic versioning is assumed. You can use `1.9` to get the latest `1.9.x` version as per the [jsdelivr docs](https://www.jsdelivr.com/features) but this is not recommended in production environments
-* `filename` is the path and filename (with extension) for the asset that you want relative to the package's root. For example `dist/alpine.js`
+* `file` is the path and filename (with extension) for the asset that you want relative to the package's root. For example `dist/alpine.js`
 
 The tag outputs the URL of the locally-cached file from the package.
 
 Example:
 
 ```
-<script defer src="{{ asset_cache package_name='alpinejs' version='1.9' filename='dist/alpine.min.js' }}"></script>
+<script defer src="{{ asset_cache package='alpinejs' version='1.9' file='dist/alpine.min.js' }}"></script>
 ```
 
 You can also use this for CSS:
 
 ```
-<link rel="stylesheet" href="{{ asset_cache package_name='tailwindcss' version='1.1.4' filename='dist/tailwind.min.css' }}">
+<link rel="stylesheet" href="{{ asset_cache package='tailwindcss' version='1.1.4' file='dist/tailwind.min.css' }}">
 ```
 
 ## What does this do?

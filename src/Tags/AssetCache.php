@@ -8,7 +8,7 @@
  *    composer require rosswintle/laravel-asset-cache
  *    php artisan storage:link (in all environments)
  *
- * Tag usage: {{ asset_cache package_name='alpinejs' version='' filename='dist/alpine.min.js' }}
+ * Tag usage: {{ asset_cache package='alpinejs' version='' file='dist/alpine.min.js' }}
  *
  */
 namespace RossWintle\StatamicAssetCache\Tags;
@@ -26,9 +26,9 @@ class AssetCache extends Tags
     public function index()
     {
         return LaravelAssetCache::cachedAssetUrl(
-            $this->params->get('package_name'),
+            $this->params->get('package'),
             $this->params->get('version') ?? '',
-            $this->params->get('filename') ?? ''
+            $this->params->get('file') ?? ''
         );
     }
 }
