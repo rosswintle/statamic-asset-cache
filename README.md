@@ -1,11 +1,18 @@
 # Statamic 3 Asset Cache
 
-A Statamic (v3) addon that automates downloading CSS and JS assets from CDNs so 
+A Statamic (v3) addon that automates downloading CSS and JS assets from CDNs so
 that they can be self hosted.
 
 This is a Statamic tag based on my [Laravel Asset Cache](https://github.com/rosswintle/laravel-asset-cache/) package.
 
 ## Installation
+
+Use the following versions (I think - pre v3.x may not have been accurate):
+
+* v3.x for Statamic 3.3/Laravel 9 on PHP 8.0/8.1
+* v2.x for Statamic 3.1/3.2/Laravel 8 on PHP 7/8.0
+* v1.x for Statamic 3.0/Laravel 8 on PHP 7
+
 
 Install the package with composer:
 
@@ -57,7 +64,7 @@ Using the tag:
 
 ## What problem does this solve?
 
-It saves you having to manually download assets and include them in your project if you want to host them locally. 
+It saves you having to manually download assets and include them in your project if you want to host them locally.
 
 There are [various reasons](https://csswizardry.com/2019/05/self-host-your-static-assets/) why you may want to do this, such as avoiding having your users tracked, to avoid depending on third-party CDNs and there are possible performance benefits too.
 
