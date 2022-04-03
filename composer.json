@@ -4,7 +4,7 @@
     "type": "statamic-addon",
     "require": {
         "php": "^8.0 || ^8.1",
-        "rosswintle/laravel-asset-cache": "dev-master"
+        "rosswintle/laravel-asset-cache": "^3.0"
     },
     "license": "mit",
     "authors": [
