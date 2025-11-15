@@ -3,8 +3,8 @@
     "description": "Local caching for inclusion of JavaScript and CSS assets in Statamic (v3) projects",
     "type": "statamic-addon",
     "require": {
-        "php": "^8.0 || ^8.1",
-        "rosswintle/laravel-asset-cache": "^3.0"
+        "php": "^8.0|^8.1|^8.2|^8.3|^8.4",
+        "rosswintle/laravel-asset-cache": "^4.0"
     },
     "license": "mit",
     "authors": [
@@ -25,7 +25,7 @@
         }
     },
     "autoload": {
-        "psr-4":  {
+        "psr-4": {
             "RossWintle\\StatamicAssetCache\\": "src/"
         }
     }
